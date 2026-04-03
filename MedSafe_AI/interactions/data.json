@@ -1,0 +1,163 @@
+{
+  "drugs": {
+    "ibuprofen": {
+      "class": "NSAID",
+      "uses": ["pain", "fever", "inflammation"],
+      "side_effects": [
+        {"effect": "stomach pain", "severity": "moderate"},
+        {"effect": "nausea", "severity": "mild"},
+        {"effect": "dizziness", "severity": "mild"},
+        {"effect": "gastric ulcer", "severity": "severe"}
+      ],
+      "allergies": ["NSAID allergy"],
+      "interactions": [
+        {"drug": "aspirin", "risk": "high"},
+        {"drug": "alcohol", "risk": "moderate"},
+        {"drug": "warfarin", "risk": "high"}
+      ],
+      "contraindications": ["ulcer", "kidney disease", "heart failure"]
+    },
+    "amoxicillin": {
+      "class": "Antibiotic (Penicillin)",
+      "uses": ["bacterial infection", "ear infection", "strep throat"],
+      "side_effects": [
+        {"effect": "rash", "severity": "moderate"},
+        {"effect": "allergic reaction", "severity": "severe"},
+        {"effect": "diarrhea", "severity": "mild"},
+        {"effect": "vomiting", "severity": "mild"}
+      ],
+      "allergies": ["penicillin", "amoxicillin allergy"],
+      "interactions": [
+        {"drug": "methotrexate", "risk": "high"},
+        {"drug": "warfarin", "risk": "moderate"}
+      ],
+      "contraindications": ["penicillin allergy", "mononucleosis"]
+    },
+    "paracetamol": {
+      "class": "Analgesic",
+      "uses": ["fever", "pain", "headache"],
+      "side_effects": [
+        {"effect": "liver damage", "severity": "severe"},
+        {"effect": "nausea", "severity": "mild"}
+      ],
+      "allergies": ["paracetamol allergy"],
+      "interactions": [
+        {"drug": "alcohol", "risk": "high"},
+        {"drug": "warfarin", "risk": "moderate"}
+      ],
+      "contraindications": ["liver disease", "alcoholism"]
+    },
+    "aspirin": {
+      "class": "NSAID / Antiplatelet",
+      "uses": ["pain", "fever", "blood clot prevention"],
+      "side_effects": [
+        {"effect": "stomach bleeding", "severity": "severe"},
+        {"effect": "tinnitus", "severity": "moderate"},
+        {"effect": "nausea", "severity": "mild"}
+      ],
+      "allergies": ["aspirin allergy", "NSAID allergy"],
+      "interactions": [
+        {"drug": "ibuprofen", "risk": "high"},
+        {"drug": "warfarin", "risk": "high"},
+        {"drug": "alcohol", "risk": "moderate"}
+      ],
+      "contraindications": ["peptic ulcer", "bleeding disorders", "children under 16"]
+    },
+    "metformin": {
+      "class": "Antidiabetic (Biguanide)",
+      "uses": ["type 2 diabetes", "blood sugar control"],
+      "side_effects": [
+        {"effect": "nausea", "severity": "mild"},
+        {"effect": "diarrhea", "severity": "mild"},
+        {"effect": "lactic acidosis", "severity": "severe"}
+      ],
+      "allergies": ["metformin allergy"],
+      "interactions": [
+        {"drug": "alcohol", "risk": "high"},
+        {"drug": "contrast dye", "risk": "high"}
+      ],
+      "contraindications": ["kidney failure", "liver disease", "heart failure"]
+    },
+    "atorvastatin": {
+      "class": "Statin",
+      "uses": ["high cholesterol", "heart disease prevention"],
+      "side_effects": [
+        {"effect": "muscle pain", "severity": "moderate"},
+        {"effect": "rhabdomyolysis", "severity": "severe"},
+        {"effect": "liver damage", "severity": "severe"},
+        {"effect": "headache", "severity": "mild"}
+      ],
+      "allergies": ["statin allergy"],
+      "interactions": [
+        {"drug": "clarithromycin", "risk": "high"},
+        {"drug": "warfarin", "risk": "moderate"},
+        {"drug": "alcohol", "risk": "moderate"}
+      ],
+      "contraindications": ["liver disease", "pregnancy"]
+    },
+    "cetirizine": {
+      "class": "Antihistamine",
+      "uses": ["allergy", "hay fever", "urticaria"],
+      "side_effects": [
+        {"effect": "drowsiness", "severity": "mild"},
+        {"effect": "dry mouth", "severity": "mild"},
+        {"effect": "headache", "severity": "mild"}
+      ],
+      "allergies": ["cetirizine allergy", "hydroxyzine allergy"],
+      "interactions": [
+        {"drug": "alcohol", "risk": "moderate"}
+      ],
+      "contraindications": ["kidney disease"]
+    },
+    "omeprazole": {
+      "class": "Proton Pump Inhibitor",
+      "uses": ["acid reflux", "stomach ulcer", "GERD"],
+      "side_effects": [
+        {"effect": "headache", "severity": "mild"},
+        {"effect": "diarrhea", "severity": "mild"},
+        {"effect": "nausea", "severity": "mild"},
+        {"effect": "bone fracture", "severity": "moderate"}
+      ],
+      "allergies": ["omeprazole allergy", "PPI allergy"],
+      "interactions": [
+        {"drug": "clopidogrel", "risk": "high"},
+        {"drug": "methotrexate", "risk": "moderate"}
+      ],
+      "contraindications": []
+    },
+    "warfarin": {
+      "class": "Anticoagulant",
+      "uses": ["blood clot prevention", "atrial fibrillation"],
+      "side_effects": [
+        {"effect": "bleeding", "severity": "severe"},
+        {"effect": "bruising", "severity": "moderate"},
+        {"effect": "nausea", "severity": "mild"}
+      ],
+      "allergies": ["warfarin allergy"],
+      "interactions": [
+        {"drug": "aspirin", "risk": "high"},
+        {"drug": "ibuprofen", "risk": "high"},
+        {"drug": "paracetamol", "risk": "moderate"},
+        {"drug": "atorvastatin", "risk": "moderate"},
+        {"drug": "alcohol", "risk": "high"}
+      ],
+      "contraindications": ["bleeding disorders", "pregnancy"]
+    },
+    "azithromycin": {
+      "class": "Antibiotic (Macrolide)",
+      "uses": ["bacterial infection", "respiratory infection", "STI"],
+      "side_effects": [
+        {"effect": "nausea", "severity": "mild"},
+        {"effect": "diarrhea", "severity": "mild"},
+        {"effect": "cardiac arrhythmia", "severity": "severe"},
+        {"effect": "abdominal pain", "severity": "mild"}
+      ],
+      "allergies": ["macrolide allergy", "azithromycin allergy"],
+      "interactions": [
+        {"drug": "warfarin", "risk": "moderate"},
+        {"drug": "atorvastatin", "risk": "high"}
+      ],
+      "contraindications": ["liver disease", "cardiac arrhythmia history"]
+    }
+  }
+}
