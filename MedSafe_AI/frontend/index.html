@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedSafe AI — Drug Safety Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MedSafe AI</h1>
+    <p>AI-powered drug safety & side effect analyzer</p>
+  </header>
+
+  <main>
+    <section class="form-card">
+      <h2>Patient Details</h2>
+
+      <div class="row">
+        <div class="field">
+          <label>Age</label>
+          <input type="number" id="age" placeholder="e.g. 30" min="1" max="120">
+        </div>
+        <div class="field">
+          <label>Gender</label>
+          <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Current Disease / Condition</label>
+        <input type="text" id="disease" placeholder="e.g. fever, kidney disease">
+      </div>
+
+      <div class="field">
+        <label>Current Medications <span class="hint">(comma separated)</span></label>
+        <input type="text" id="current_meds" placeholder="e.g. ibuprofen, amoxicillin">
+      </div>
+
+      <div class="field">
+        <label>Medications taken in last 24 hours <span class="hint">(comma separated)</span></label>
+        <input type="text" id="recent_meds" placeholder="e.g. aspirin, paracetamol">
+      </div>
+
+      <div class="field">
+        <label>Known Allergies <span class="hint">(comma separated)</span></label>
+        <input type="text" id="allergies" placeholder="e.g. penicillin, NSAID allergy">
+      </div>
+
+      <div class="field">
+        <label>Symptoms Experienced <span class="hint">(comma separated)</span></label>
+        <input type="text" id="symptoms" placeholder="e.g. rash, stomach pain, nausea">
+      </div>
+
+      <button id="analyzeBtn" onclick="analyze()">Analyze Medications</button>
+    </section>
+
+    <section id="results" class="hidden">
+      <h2>Analysis Results</h2>
+      <div id="result-cards"></div>
+      <div class="disclaimer">
+        ⚠️ This system is for educational and decision-support purposes only.
+        Always consult a qualified healthcare professional before changing any medication.
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
